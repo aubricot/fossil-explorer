@@ -1,0 +1,25 @@
+# CPU-only PyTorch (much smaller than the CUDA build used on Colab)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.5.1+cpu
+
+# Science / ML
+numpy
+scipy
+scikit-learn
+scikit-image
+pandas
+
+# 3D meshes
+vtk
+pyvista
+mskt                     # pymskt
+point-cloud-utils
+nibabel
+opencv-python-headless   # headless = no GUI/OpenGL dependency
+open3d                   # large (~400 MB). Remove if NSM imports fine without it.
+
+# Notebook + plots
+plotly>=5.20
+nbformat>=4.2            # required for plotly to render in notebooks
+ipykernel
+ipywidgets
